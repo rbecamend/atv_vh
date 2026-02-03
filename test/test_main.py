@@ -4,7 +4,7 @@ from app.main import app
 client = TestClient(app)
 
 def testar_status():
-    response = client.get("/health")
+    response = client.get("/status")
     assert response.status_code == 200
     assert response.json() == {"status": "ok"}
 
