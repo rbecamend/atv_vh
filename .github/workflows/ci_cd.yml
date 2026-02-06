@@ -9,7 +9,6 @@ permissions:
   packages: write
 
 env:
-  # Define o nome da imagem baseada no repositório (ex: ghcr.io/seu-usuario/seu-repo)
   IMAGE_NAME: ghcr.io/${{ github.repository }}
 
 jobs:
